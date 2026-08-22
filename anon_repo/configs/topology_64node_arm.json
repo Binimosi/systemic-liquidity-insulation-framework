@@ -1,0 +1,11 @@
+{
+  "network_name": "64_Node_ARMv9_Payment_Mesh",
+  "total_nodes": 64,
+  "tiers": {
+    "RTGS_Core": {"nodes": 8, "base_latency_ms": 0.45, "capacity_tps": 5000},
+    "EthSwitch_Edge": {"nodes": 40, "base_latency_ms": 1.20, "capacity_tps": 1200},
+    "PAPSS_Gateway": {"nodes": 16, "base_latency_ms": 3.80, "capacity_tps": 800}
+  },
+  "inter_cluster_bandwidth_gbps": 100,
+  "telemetry": "eBPF_XDP_Kernel_Tracing"
+}
